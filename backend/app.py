@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/api/data')
 def get_data():
     data = generate_random_data()
-    return jsonify(data)
+    return data
 
 
 @app.route('/')
